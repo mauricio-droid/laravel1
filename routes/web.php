@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AutorController;
+use App\Http\Controllers\BookController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +17,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	dd('falta en front de la app');
 });
+
+
+Route::get('/admin', function () {
+	return view('index');
+});
+Route::resource('admin/autor', AutorController::class);
+Route::resource('admin/category', CategoryController::class);
+Route::resource('admin/book', BookController::class);
+
