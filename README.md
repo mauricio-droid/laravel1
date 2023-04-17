@@ -1,3 +1,3 @@
-##proyecto de practica
+##proyecto de práctica
 1. install laravel
-2. crear modelos
+2. create models
